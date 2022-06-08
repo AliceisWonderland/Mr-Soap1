@@ -1,0 +1,66 @@
+.header {
+    border-bottom: 1px solid black;
+    padding: 16px 0px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__logotype {
+    border: 1px solid black;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    transition: color 350ms, border 350ms;
+}
+
+.header__logotype:hover {
+    color: #FFA3A9;
+    border: 1px solid #FFA3A9;
+    transition-duration: 175ms;
+}
+
+.header__basket a {
+    color: black;
+    font-size: 24px;
+    transition: color 350ms;
+}
+
+.header__basket a:hover {
+    color: #FFA3A9;
+    transition-duration: 175ms;
+}
+
+.header__basket {
+    position: relative;
+}
+
+.header__basket::after {
+    content: attr(data-basket);
+    position: absolute;
+    border-radius: 100%;
+    padding: 2px 4px;
+    bottom: -10px;
+    right: -10px;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}

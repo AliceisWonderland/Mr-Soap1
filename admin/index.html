@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Soap - Панель администратора</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="app/styles/app.css">
+    <link rel="stylesheet" href="app/styles/utils/form.css">
+    <link rel="stylesheet" href="app/styles/utils/text.css">
+    <link rel="stylesheet" href="app/styles/components/auth.css">
+</head>
+<body>
+    <main>
+        <section class="auth">
+            <h1>Авторизация</h1>
+            <form class="form">
+                <input type="text" class="form__input" name="login" id="login" placeholder="Введите логин">
+                <input type="password" class="form__input" name="password" id="password" placeholder="Введите пароль">
+                <input type="submit" class="form__button auth__button" value="Войти">
+            </form>
+        </section>
+    </main>
+
+    <script src="app/scripts/base/jquery-3.6.0.min.js"></script>
+    <script src="app/scripts/plugins/jquery.md5.js"></script>
+    <script src="app/scripts/components/auth.js"></script>
+</body>
+</html>

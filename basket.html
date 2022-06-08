@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Soap - Корзина</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="app/styles/app.css">
+    <link rel="stylesheet" href="app/styles/base/header.css">
+    <link rel="stylesheet" href="app/styles/base/footer.css">
+    <link rel="stylesheet" href="app/styles/utils/btn.css">
+    <link rel="stylesheet" href="app/styles/utils/text.css">
+    <link rel="stylesheet" href="app/styles/components/basket.css">
+    <link rel="stylesheet" href="app/styles/plugins/modal.css">
+    <script src="https://kit.fontawesome.com/e34c08717a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+        ym(88927237, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/88927237" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container wrapper">
+            <div class="header__left">
+                <a href="index.html" class="header__logotype">MR. SOAP</a>
+            </div>
+            <div class="header__right">
+                <div class="header__basket" data-basket="0">
+                    <a href="basket.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="basket">
+            <div class="basket__container wrapper">
+                <h1 class="h1">Корзина</h1>
+                <div class="basket__items"></div>
+                <button class="btn basket__payment">Оплатить</button>
+                <a href="catalog.html" class="btn basket__purchases">К покупкам</a>
+            </div>
+            <div class="modal" style="display: none;">
+                <div class="modal__container">
+                    <h3 class="modal__title">Оформление заказа</h3>
+                    <i class="fa-solid fa-xmark js-close"></i>
+                    <form class="modal__form">
+                        <div class="modal__basket"></div>
+                        <span class="modal__total"></span>
+                        <input class="modal__form-input" placeholder="Введите имя" type="text" id="name" required>
+                        <input class="modal__form-input" placeholder="Введите телефон" type="tel" id="phone" required>
+                        <input class="modal__form-input" placeholder="Введите электронную почту" type="email" id="email" required>
+                        <input class="modal__form-button" type="submit" value="Оформить заказ">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container wrapper">
+            <span class="footer__text">© 2022 Mr. Soap</span>
+            <a href="https://metrika.yandex.ru/stat/?id=88927237&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/88927237/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="88927237" data-lang="ru" /></a>
+        </div>
+    </footer>
+    
+    <script src="app/scripts/base/jquery-3.6.0.min.js"></script>
+    <script src="app/scripts/plugins/jquery.mask.js"></script>
+    <script src="app/scripts/plugins/modal.js"></script>
+    <script src="app/scripts/plugins/smtp.js"></script>
+    <script src="app/scripts/components/items.js"></script>
+    <script src="app/scripts/components/basket.js"></script>
+</body>
+</html>

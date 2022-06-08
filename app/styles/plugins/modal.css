@@ -1,0 +1,149 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+}
+  
+.modal__container {
+    max-width: 600px;
+    min-width: 600px;
+    background-color: white;
+    padding: 32px;
+    position: relative;
+}
+  
+.js-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 26px;
+    transition-duration: 350ms;
+    transition: color 350ms;
+    color: black;
+}
+  
+.js-close:hover {
+    color: #FFA3A9;
+    transition-duration: 175ms;
+}
+
+.modal__title {
+    color: black;
+    margin-bottom: 24px;
+    font-weight: 350;
+    font-size: 36px;
+}
+
+.modal__basket {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__basket-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__basket-item-price {
+    font-weight: 500;
+}
+
+.modal__total {
+    margin-bottom: 16px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity {
+    margin-left: 16px;
+    margin-right: auto;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.quantity span {
+    font-weight: bold;
+}
+
+.quantity i {
+    color: #FFA3A9;
+    transition: color 350ms;
+}
+
+.quantity i:hover {
+    color: black;
+    transition-duration: 175ms;
+}
+
+
+.modal__form-input {
+    padding: 12px 24px;
+    margin-bottom: 24px;
+    background-color: white;
+    border: 1px solid #FFA3A9;
+    color: black;
+}
+
+.modal__form-input::placeholder {
+    color: black;
+}
+
+.modal__form-input:focus {
+    outline: none;
+    border: 1px solid #FFA3A9
+}
+
+.modal__form-button {
+    background: #FFA3A9;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: white;
+    border: none;
+    padding: 14px 64px;
+    transition-duration: 350ms;
+    transition: background 350ms color 350ms;
+    cursor: pointer;
+}
+
+.modal__form-button:focus {
+    outline: none;
+}
+
+.modal__form-button:active {
+    transform: scale(.95);
+    transition-duration: 175ms;
+}
+
+.modal__form-button:hover {
+    background: #000;
+    color: #fff;
+    transition-duration: 175ms;
+}
+
+@media screen and (max-width: 768px) {
+    .modal__container {
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
+  
+@media screen and (max-width: 424px) {
+    .modal__title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,50 @@
+.abous-us {
+    width: 100%;
+}
+
+.about-us__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us__title {
+    text-align: center;
+}
+
+.about-us__subtitle {
+    margin-bottom: 32px;
+}
+
+.about-us__info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us__image {
+    width: 30%;
+}
+
+.about-us__image img {
+    width: 100%;
+    max-width: 425px;
+    max-height: 595px;
+    display: block;
+}
+
+@media screen and (max-width: 1366px) {
+    .about-us__container {
+        flex-direction: column;
+    }
+
+    .about-us__image {
+        display: none;
+    }
+
+    .about-us__info {
+        width: 100%;
+    }
+}

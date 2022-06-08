@@ -1,0 +1,75 @@
+.btn {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    padding: 16px 26px;
+    text-align: center;
+    border: none;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    background: #FFA3A9;
+    transition: ease 0.3s;
+}
+  
+.btn:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 300px;
+    margin-left: 60px;
+    background: #fff;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+    position: absolute;
+    left: -40px;
+    top: -150px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: all 0.1s;
+    animation-name: slideme;
+    animation-duration: 2.5s;
+    animation-delay: 0.01s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes slideme {
+    0% { left: -30px; margin-left: 0px; }
+    30% { left: 110%; margin-left: 80px; }
+    100% { left: 110%; margin-left: 80px; } 
+}
+
+.btn__basket {
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    background: white;
+    transition: background 350ms, color 350ms;
+}
+
+.btn__basket:hover {
+    background: #FFA3A9;
+    color: white;
+    transition-duration: 175ms;
+}
+
+.in-basket {
+    color: white;
+    background: #FFA3A9 !important;
+}

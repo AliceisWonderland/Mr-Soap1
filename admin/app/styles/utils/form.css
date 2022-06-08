@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 7%);
+    padding: 50px;
+    border-radius: 16px;
+}
+
+.form input {
+    min-width: 300px;
+    max-width: 300px;
+    font-family: inherit;
+}
+
+.form input::placeholder {
+    font-family: inherit;
+}
+
+.form input[type=submit] {
+    min-width: calc(300px + 34px);
+    max-width: calc(300px + 34px);
+}
+
+.form__input {
+    width: 100%;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.form__button {
+    padding: 8px 16px;
+    width: 100%;
+    border: 1px solid black;
+    background: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 350ms, color 350ms;
+}
+
+.form__button:hover {
+    color: white;
+    background: black;
+    transition-duration: 175ms;
+}

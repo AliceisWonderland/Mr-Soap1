@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 16px 0px;
+    flex-shrink: 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__container span {
+    margin-right: 8px;
+}
+
+.footer__container img {
+    display: block;
+}
